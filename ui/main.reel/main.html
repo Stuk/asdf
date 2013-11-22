@@ -21,6 +21,23 @@
                 "enabled": true,
                 "label": "Button"
             }
+        },
+        "myComponent1": {
+            "prototype": "ui/my-component.reel",
+            "properties": {
+                "element": {"#": "myComponent"}
+            }
+        },
+        "repetition1": {
+            "prototype": "montage/ui/repetition.reel",
+            "properties": {
+                "element": {"#": "repetition"},
+                "content": [
+                    1,
+                    2,
+                    3
+                ]
+            }
         }
     }
     </script>
@@ -28,6 +45,12 @@
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
         <button data-montage-id="button"></button>
+        <ul data-montage-id="repetition">
+            <li>
+                Item
+                <div data-montage-id="myComponent"></div>
+            </li>
+        </ul>
     </div>
 </body>
 </html>
