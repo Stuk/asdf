@@ -30,6 +30,14 @@
                 "label": "Button"
             }
         },
+        "button3": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "element": {"#": "object2"},
+                "enabled": true,
+                "label": "Hello"
+            }
+        },
         "ef": {
             "prototype": "montage/ui/repetition.reel",
             "properties": {
@@ -58,6 +66,7 @@
 </head>
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
+        <button data-montage-id="object2"></button>
         <button data-montage-id="button"></button>
         <ul data-montage-id="repetition">
             <li>
