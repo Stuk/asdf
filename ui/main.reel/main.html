@@ -22,10 +22,12 @@
                 "label": "Button asd"
             }
         },
-        "item": {
-            "prototype": "ui/my-component.reel",
+        "button2": {
+            "prototype": "digit/ui/button.reel",
             "properties": {
-                "element": {"#": "myComponent"}
+                "element": {"#": "object"},
+                "enabled": true,
+                "label": "Button"
             }
         },
         "ef": {
@@ -38,6 +40,12 @@
                     3
                 ]
             }
+        },
+        "item": {
+            "prototype": "ui/my-component.reel",
+            "properties": {
+                "element": {"#": "myComponent"}
+            }
         }
     }
     </script>
@@ -49,6 +57,7 @@
             <li>
                 testing
                 <div data-montage-id="myComponent"></div>
+                <button data-montage-id="object"></button>
             </li>
         </ul>
     </div>
