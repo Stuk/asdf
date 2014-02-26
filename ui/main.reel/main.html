@@ -28,12 +28,28 @@
                 "enabled": true,
                 "label": "Hello"
             }
+        },
+        "textField": {
+            "prototype": "digit/ui/text-field.reel",
+            "properties": {
+                "element": {"#": "textField"},
+                "placeholderValue": "Text"
+            }
+        },
+        "textField2": {
+            "prototype": "digit/ui/text-field.reel",
+            "properties": {
+                "element": {"#": "textField2"},
+                "placeholderValue": "Text"
+            }
         }
     }
     </script>
 </head>
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
+        <input data-montage-id="textField" type="text">
+        <input data-montage-id="textField2" type="text">
         <button data-montage-id="object2"></button>
         <button data-montage-id="button"></button>
     </div>
