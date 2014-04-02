@@ -13,5 +13,11 @@ exports.NameList = Component.specialize(/** @lends NameList# */ {
         value: function NameList() {
             this.super();
         }
+    },
+    
+    addName: 
+        value: function (event) {
+            this.templateObjects.names.content.push(this.templateObjects.name.value);
+        }
     }
 });

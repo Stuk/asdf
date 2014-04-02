@@ -9,12 +9,74 @@
             "properties": {
                 "element": {"#": "owner"}
             }
+        },
+        "actionEventListener": {
+            "prototype": "montage/core/event/action-event-listener",
+            "properties": {
+                "action": "addName",
+                "handler": {"@": "owner"}
+            },
+            "_dev": {
+                "isHidden": true
+            }
+        },
+        "add": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "element": {"#": "add"},
+                "enabled": true,
+                "label": "Button"
+            },
+            "listeners": [
+                {
+                    "type": "action",
+                    "useCapture": false,
+                    "listener": {"@": "actionEventListener"}
+                }
+            ]
+        },
+        "listName": {
+            "prototype": "montage/ui/text.reel",
+            "properties": {
+                "element": {"#": "listName"},
+                "value": "Text"
+            }
+        },
+        "name": {
+            "prototype": "digit/ui/text-field.reel",
+            "properties": {
+                "element": {"#": "name"},
+                "placeholderValue": "Text"
+            }
+        },
+        "names": {
+            "prototype": "montage/ui/repetition.reel",
+            "properties": {
+                "element": {"#": "names"},
+                "content": [
+                    1,
+                    2,
+                    3
+                ],
+                "contentController": {"@": "rangeController"}
+            }
+        },
+        "text": {
+            "prototype": "montage/ui/text.reel",
+            "properties": {
+                "value": "Text"
+            }
         }
     }
     </script>
 </head>
 <body>
     <div data-montage-id="owner" class="NameList">
+        <input data-montage-id="name" type="text">
+        <button data-montage-id="add"></button>
+        <ul data-montage-id="names">
+            <li data-montage-id="listName"></li>
+        </ul>
     </div>
 </body>
 </html>
