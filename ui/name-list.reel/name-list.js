@@ -15,7 +15,7 @@ exports.NameList = Component.specialize(/** @lends NameList# */ {
         }
     },
     
-    addName: 
+    addName: {
         value: function (event) {
             this.templateObjects.names.content.push(this.templateObjects.name.value);
         }
