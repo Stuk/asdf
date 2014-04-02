@@ -12,6 +12,7 @@ exports.NameList = Component.specialize(/** @lends NameList# */ {
     constructor: {
         value: function NameList() {
             this.super();
+            this.templateObjects.names.content = [];
         }
     },
     
