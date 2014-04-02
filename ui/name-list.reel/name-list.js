@@ -15,7 +15,7 @@ exports.NameList = Component.specialize(/** @lends NameList# */ {
         }
     },
     
-    deserializedFromTemplate: {
+    enterDocument: {
         value: function () {
             this.templateObjects.names.content = [];
         }
