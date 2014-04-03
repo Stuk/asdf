@@ -13,40 +13,27 @@
                 "element": {"#": "main"}
             }
         },
-        "button1": {
+        "button": {
             "prototype": "digit/ui/button.reel",
             "properties": {
                 "element": {"#": "button"},
                 "enabled": true,
-                "label": "Goodbye"
+                "label": "one"
             }
         },
-        "button3": {
+        "button5": {
             "prototype": "digit/ui/button.reel",
             "properties": {
-                "element": {"#": "object2"},
+                "element": {"#": "button5"},
                 "enabled": true,
-                "label": "Hello"
+                "label": "two"
             }
         },
-        "nameList": {
-            "prototype": "ui/name-list.reel",
+        "condition": {
+            "prototype": "montage/ui/condition.reel",
             "properties": {
-                "element": {"#": "nameList"}
-            }
-        },
-        "textField": {
-            "prototype": "digit/ui/text-field.reel",
-            "properties": {
-                "element": {"#": "textField"},
-                "placeholderValue": "Text"
-            }
-        },
-        "textField2": {
-            "prototype": "digit/ui/text-field.reel",
-            "properties": {
-                "element": {"#": "textField2"},
-                "placeholderValue": "Text"
+                "element": {"#": "condition"},
+                "removalStrategy": "hide"
             }
         }
     }
@@ -54,11 +41,12 @@
 </head>
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
-        <input data-montage-id="textField" type="text">
-        <input data-montage-id="textField2" type="text">
-        <button data-montage-id="object2"></button>
-        <button data-montage-id="button"></button>
-        <div data-montage-id="nameList"></div>
+        <div data-montage-id="condition">
+            <button data-montage-id="button">
+
+            </button>
+            <button data-montage-id="button5"></button>
+        </div>
     </div>
 </body>
 </html>
