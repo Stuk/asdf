@@ -6,7 +6,6 @@
     <script type="text/montage-serialization">
     {
         "owner": {
-            "prototype": "ui/my-component.reel",
             "properties": {
                 "element": {"#": "myComponent"}
             }
@@ -15,6 +14,14 @@
             "prototype": "digit/ui/button.reel",
             "properties": {
                 "element": {"#": "button"},
+                "enabled": true,
+                "label": "Button"
+            }
+        },
+        "button2": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "element": {"#": "button2"},
                 "enabled": true,
                 "label": "Button"
             }
@@ -49,6 +56,7 @@
         <input data-montage-id="textField" type="text">
         <img data-montage-id="image" src="">
         <button data-montage-id="button"></button>
+        <button data-montage-id="button2"></button>
     </div>
 </body>
 </html>
